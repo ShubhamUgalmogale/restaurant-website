@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #b22222;
+  padding: 1rem;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 3rem;
+  background: url('https://via.placeholder.com/1200x400') no-repeat center/cover;
+  color: white;
+}
+
+.btn {
+  background: #b22222;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Highlights */
+.highlights {
+  padding: 2rem;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+/* Menu Page */
+.menu {
+  padding: 2rem;
+}
+
+.menu-category {
+  margin-bottom: 2rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #b22222;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
